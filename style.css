@@ -1,0 +1,72 @@
+
+
+.game{ 
+    
+    width: 600px;
+    height: 265px;
+    border: 4px solid black;
+    margin: auto;
+}
+
+#name{
+    color: red;
+    position: absolute; 
+    top: 0px;
+}
+
+#Huzi{
+  width: 50px;
+  height: 100px;
+  background-image: url(huza1.png);
+  background-size: 50px 100px  ;
+  position: relative;
+  top: 150px;
+  
+}
+
+.jump{
+    animation: jump 2s linear;
+}
+
+@keyframes jump {
+    0% {
+        top: 40px
+    }
+
+    30%{
+        top:130px;
+    }
+
+    50%{
+       top:80px;
+    } 
+
+    80%{
+        top: 130px
+    } 
+
+    100%{
+        top: 150px;
+    }
+    
+}
+
+#Nana{
+    width: 100px;
+    height: 100px;
+    top:60px;
+    left:580px; 
+    background-image: url(nanav1.png);
+    background-size: 100px 100px ;
+    position: relative;
+    animation: move 3s infinite;
+}
+
+@keyframes move{
+    0%{
+        left:580px;
+    }
+    100% {
+        left:  -200px;
+    }
+}
